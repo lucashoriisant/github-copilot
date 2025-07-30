@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIO Cars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIO Cars</h1>
+
+    <!--Add a button to buy a car-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Preço</th>
+                <th>Cor</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fiat</td>
+                <td>Uno</td>
+                <td>2012</td>
+                <td>R$ 25.000</td>
+                <td>Azul</td>
+                <td><button car ="Uno">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Chevrolet</td>
+                <td>Celta</td>
+                <td>2010</td>
+                <td>R$ 22.000</td>
+                <td>Vermelho</td>
+                <td><button car ="Celta">Comprar</button></td>
+            </tr>
+            <tr>
+                <td>Volkswagen</td>
+                <td>Gol</td>
+                <td>2015</td>
+                <td>R$ 30.000</td>
+                <td>Preto</td>
+                <td><button car ="Gol">Comprar</button></td>
+            </tr>
+        </tbody>
+
+        <!-- Template para inclusão via JavaScript -->
+        <tbody id="car-template" style="display: none;">
+            <tr>
+                <td class="car-brand"></td>
+                <td class="car-model"></td>
+                <td class="car-year"></td>
+                <td class="car-price"></td>
+                <td class="car-color"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src ="static/car_sales.js"></script>
+</body>
+</html>
